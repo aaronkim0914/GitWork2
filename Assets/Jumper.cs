@@ -21,6 +21,13 @@ public class Jumper : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
+
+    //디벨롭 브렌치(중간다리)
+    //피처를 따온다.
+    //개발용 메인 브렌치
+    //릴리즈 브렌치 (버그 수정용)
+
+    //마스터 브랜치, 디벨롭 브렌치 이 두개 반드시 만들어 주기
     void Update()
     {
         ////
