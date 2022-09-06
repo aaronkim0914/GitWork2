@@ -23,7 +23,7 @@ public class Jumper : MonoBehaviour
 
     void Update()
     {
-        ////
+        //// ///
         if (Input.GetButtonDown("Jump"))
         {
             ChangeState(JumpState.Jump);
