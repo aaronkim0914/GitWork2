@@ -30,7 +30,7 @@ public class Jumper : MonoBehaviour
     //마스터 브랜치, 디벨롭 브렌치 이 두개 반드시 만들어 주기
     void Update()
     {
-        ////
+        //// ///
         if (Input.GetButtonDown("Jump"))
         {
             ChangeState(JumpState.Jump);
