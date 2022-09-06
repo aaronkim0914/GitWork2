@@ -8,6 +8,9 @@ public class Jumper : MonoBehaviour
     
    private Rigidbody rb;
 
+    [SerializeField, Range(0f,20f)]
+    private float jumpPower = 10f;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
