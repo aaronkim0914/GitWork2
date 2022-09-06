@@ -8,9 +8,7 @@ public class Jumper : MonoBehaviour
     public enum JumpState { Ground, Jump, fall }
     private JumpState state = JumpState.Ground;
 
-    /// <summary>
-    /// //
-    /// </summary>
+    
     private Rigidbody rb;
 
     [SerializeField, Range(0f, 20f)]
