@@ -22,12 +22,15 @@ public class Jumper : MonoBehaviour
     }
 
 
-    //µğº§·Ó ºê·»Ä¡(Áß°£´Ù¸®)
-    //ÇÇÃ³¸¦ µû¿Â´Ù.
-    //°³¹ß¿ë ¸ŞÀÎ ºê·»Ä¡
-    //¸±¸®Áî ºê·»Ä¡ (¹ö±× ¼öÁ¤¿ë)
+    //ë””ë²¨ë¡­ ë¸Œë Œì¹˜(ì¤‘ê°„ë‹¤ë¦¬)
+    //í”¼ì²˜ë¥¼ ë”°ì˜¨ë‹¤.
+    //ê°œë°œìš© ë©”ì¸ ë¸Œë Œì¹˜
+    //ë¦´ë¦¬ì¦ˆ ë¸Œë Œì¹˜ (ë²„ê·¸ ìˆ˜ì •ìš©)
 
-    //¸¶½ºÅÍ ºê·£Ä¡, µğº§·Ó ºê·»Ä¡ ÀÌ µÎ°³ ¹İµå½Ã ¸¸µé¾î ÁÖ±â
+=======
+
+    //ë§ˆìŠ¤í„° ë¸Œëœì¹˜, ë””ë²¨ë¡­ ë¸Œë Œì¹˜ ì´ ë‘ê°œ ë°˜ë“œì‹œ ë§Œë“¤ì–´ ì£¼ê¸°
+
     void Update()
     {
         //// ///
@@ -35,7 +38,7 @@ public class Jumper : MonoBehaviour
         {
             ChangeState(JumpState.Jump);
            
-            Debug.Log("Á¡ÇÁÇÑ´Ù.");
+            Debug.Log("ì í”„í•œë‹¤.");
         }
     }
 
@@ -54,19 +57,19 @@ public class Jumper : MonoBehaviour
 
     private IEnumerator Ground()
     {
-        Debug.Log("¶¥");
+        Debug.Log("ë•…");
         yield return null;
     }
 
     private IEnumerator Jump()
     {
-        Debug.Log("Á¡ÇÁ");
+        Debug.Log("ì í”„");
         yield return null;
     }
 
     private IEnumerator Fall()
     {
-        Debug.Log("Ãß¶ô");
+        Debug.Log("ì¶”ë½");
         yield return null;
     }
 }
