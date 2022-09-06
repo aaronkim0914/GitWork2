@@ -23,11 +23,25 @@ public class Jumper : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && isJump)
+        if (Input.GetButtonDown("Jump"))
         {
-            rb.AddForce(Vector3.up * 10f, ForceMode.Impulse);
+            ChangeState(JumpState.Jump);
+           
             Debug.Log("점프한다.");
         }
+    }
+
+    private void Start()
+    {
+        ChangeState(state);
+    }
+
+
+    private void ChangeState(JumpState nextState)
+    {
+        StopCoroutine(state.ToString());
+        state = nextState;
+        StartCoroutine(state.ToString());
     }
 
     private IEnumerator Ground()
