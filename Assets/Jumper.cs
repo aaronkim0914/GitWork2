@@ -25,7 +25,7 @@ public class Jumper : MonoBehaviour
     //디벨롭 브렌치(중간다리)
     //피처를 따온다.
     //개발용 메인 브렌치
-
+    //릴리즈 브렌치 (버그 수정용)
     void Update()
     {
         //// ///
